@@ -1,0 +1,56 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+            <div class="general-wrap">
+                <header>
+                    <div class="header-wrap">
+                        <div class="header-text-wrap">
+                            <div class="h1">Pinsere</div>
+                            <div class="h2">The best pizza in town</div>
+                        </div>
+                    </div>
+                </header>
+                <main>  
+                    <div class="menu" id="menu">
+                    </div>
+                    <div class="order">
+                        <div class="order-wrap">
+                            <div class="order-header">
+                                <h2>Your order</h2>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-item-name">Pizza</div>
+                                <button class="order-item-remove">remove</button>
+                                <div class="order-item-price">$14</div>
+                            </div>
+                            <hr class="hr-bottom">
+                            <div class="total-price-wrap">
+                                <div class="total-price-text">Total price</div>
+                                <div class="total-price order-item-price" id="total-price">$14</div>
+                            </div>
+                            <button class="btn-order" id="btn-order">Complete order</button>
+                        </div>
+                    </div>
+                    <div class="card-details hide">
+                        <h2 class="card-details-header">Enter card details</h2>
+                        <form action="" class="payment-form">
+                            <input type="text" placeholder="Enter your name" required class="input-form-item">
+                            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="Enter card number" required class="input-form-item">
+                            <input type="tel" maxlength="3" placeholder="Enter CVV" pattern="[0-9\s]{3}" required  class="input-form-item">
+                            <button type="submit" class="btn-order input-form-btn">Pay</button>
+                        </form>
+                    </div>
+                    <div class="final-message">Thanks, Name! Your order is on its way!</div>
+                </main> 
+            </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
+
