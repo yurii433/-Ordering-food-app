@@ -20,37 +20,22 @@
                 <main>  
                     <div class="menu" id="menu">
                     </div>
-                    <div class="order">
-                        <div class="order-wrap">
-                            <div class="order-header">
-                                <h2>Your order</h2>
-                            </div>
-                            <div class="order-item">
-                                <div class="order-item-name">Pizza</div>
-                                <button class="order-item-remove">remove</button>
-                                <div class="order-item-price">$14</div>
-                            </div>
-                            <hr class="hr-bottom">
-                            <div class="total-price-wrap">
-                                <div class="total-price-text">Total price</div>
-                                <div class="total-price order-item-price" id="total-price">$14</div>
-                            </div>
-                            <button class="btn-order" id="btn-order">Complete order</button>
+                    <div class="order hide" id = "order">
+                    </div>
+                    <div class="card-details-wrap hide" id = "card-details-wrap">
+                        <div class="card-details">
+                            <h2 class="card-details-header">Enter card details</h2>
+                            <form action="" class="payment-form">
+                                <input type="text" placeholder="Enter your name" required class="input-form-item" id="client-name">
+                                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="Enter card number" required class="input-form-item">
+                                <input type="tel" maxlength="3" placeholder="Enter CVV" pattern="[0-9\s]{3}" required  class="input-form-item">
+                                <button type="submit" class="btn-order input-form-btn" id="btn-pay">Pay</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="card-details hide">
-                        <h2 class="card-details-header">Enter card details</h2>
-                        <form action="" class="payment-form">
-                            <input type="text" placeholder="Enter your name" required class="input-form-item">
-                            <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="Enter card number" required class="input-form-item">
-                            <input type="tel" maxlength="3" placeholder="Enter CVV" pattern="[0-9\s]{3}" required  class="input-form-item">
-                            <button type="submit" class="btn-order input-form-btn">Pay</button>
-                        </form>
-                    </div>
-                    <div class="final-message">Thanks, Name! Your order is on its way!</div>
+                    
                 </main> 
             </div>
         <script src="index.js" type="module"></script>
     </body>
 </html>
-
